@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mall-third-party
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+server:
+  port: 30000
+
+qiniu:
+  accessKey: yf1QbdegMexy8OhfAcl6er9ncgnNt4M0rOhfxRjI
+  secretKey: Q3Ow4hH1gtdEYEQZehg-WZtHg19mQpxj2j3JC1LM
+  bucket: zooeyace-mall

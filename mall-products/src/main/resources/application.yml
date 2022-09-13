@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://192.168.80.140:3306/mall_pms
+
+# 注册
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: mall-product
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto # 主键自增
+
+server:
+  port: 10001
+
+# 七牛云
+qiniu:
+  accessKey: yf1QbdegMexy8OhfAcl6er9ncgnNt4M0rOhfxRjI
+  secretKey: Q3Ow4hH1gtdEYEQZehg-WZtHg19mQpxj2j3JC1LM
+  bucket: zooeyace-mall
+
+logging:
+  level:
+    com.zyy.mall: debug
+
